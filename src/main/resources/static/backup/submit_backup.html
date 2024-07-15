@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Question</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/submit-styles.css">
+</head>
+<body>
+<div class="header">
+    <h2 style="text-align: center">InterviewX Platform Mastery</h2>
+</div>
+<div class="sub-header">
+    <h3 style="text-align: center">Submit Interview Question.</h3>
+</div>
+<form>
+    <div class="section">
+        <h3>Employee Details</h3>
+        <label>Employee Name: <input type="text" name="employeeName"></label><br>
+        <label>Employee Email: <input type="email" name="employeeEmail"></label><br>
+        <label>Designation: <input type="text" name="designation"></label><br>
+        <label>Employee Telescope Profile URL: <input type="url" name="profileUrl"></label><br>
+    </div>
+
+    <div class="section">
+        <h3>Client Details</h3>
+        <label>Account Name:
+            <select name="accountName">
+                <option value="account1">Account 1</option>
+                <option value="account2">Account 2</option>
+            </select>
+        </label><br>
+
+        <label>Project Name:
+            <select name="projectName">
+                <option value="project1">Project 1</option>
+                <option value="project2">Project 2</option>
+            </select>
+        </label><br>
+
+        <label>Client Name:
+            <select name="clientName">
+                <option value="client1">Client 1</option>
+                <option value="client2">Client 2</option>
+            </select>
+        </label><br>
+    </div>
+
+    <div class="section">
+        <h3>Technology Details</h3>
+        <label>Language Name:
+            <select name="languageName">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+            </select>
+        </label><br>
+    </div>
+
+    <div class="section">
+        <h3>Question With Component</h3>
+        <div id="questions">
+            <div class="question">
+                <label>Question:
+                    <input type="text" name="questions[]">
+                </label><br>
+
+                <label>Component:
+                    <select name="components[]">
+                        <option value="spring">Spring</option>
+                        <option value="spring-boot">Spring Boot</option>
+                        <option value="hld">HLD</option>
+                        <option value="lld">LLD</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <button type="button" id="addQuestion">Add Another Question</button><br>
+    </div>
+
+    <input type="submit" value="Submit">
+</form>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>

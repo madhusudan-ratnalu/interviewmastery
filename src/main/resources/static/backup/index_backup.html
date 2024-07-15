@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InterviewX Platform Mastery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+          background: #eee;
+        }
+        .wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .section {
+          margin: 20px;
+          padding: 20px;
+          width: 300px;
+          height: 300px;
+          border-radius: 20px;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          text-align: center;
+        }
+        .section:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          transform: scale(1.1);
+        }
+        .section-submit {
+          background: #ff7f50;
+          color: white;
+        }
+        .section-roadmap {
+          background: #20b2aa;
+          color: white;
+        }
+    </style>
+</head>
+<body>
+<h2 style="text-align: center">InterviewX Platform Mastery</h2>
+<div class="wrapper">
+    <div class="section section-submit">
+        <h3>Submit Interview Question</h3>
+        <p>Share your knowledge with the world.</p>
+        <button style="padding: 10px 20px; cursor: pointer; background: #f44336; color: white; border: none; border-radius: 5px;">Submit Now</button>
+    </div>
+    <div class="section section-roadmap">
+        <h3>Get your Interview RoadMap</h3>
+        <p>Start your journey towards mastery here.</p>
+        <button style="padding: 10px 20px; cursor: pointer; background: #008CBA; color: white; border: none; border-radius: 5px;">Get Started</button>
+    </div>
+</div>
+</body>
+</html>
