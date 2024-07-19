@@ -1,4 +1,28 @@
 package com.epam.codemastery.InterviewX.model;
 
-public record ClientModel(String clientCode, String country, String clientName) {
+
+import com.epam.codemastery.InterviewX.config.ObjectIdSerializer;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.bson.types.ObjectId;
+
+import java.util.Date;
+
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class ClientModel {
+    @JsonSerialize(using = ObjectIdSerializer.class)
+    private ObjectId _id;
+    private String clientCode;
+    private String country;
+    private String clientName;
+    private Date dateCreated;
+    private Date dateModified;
+    private Boolean isDeleted;
 }

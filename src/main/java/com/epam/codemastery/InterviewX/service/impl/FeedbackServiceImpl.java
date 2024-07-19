@@ -3,7 +3,9 @@ package com.epam.codemastery.InterviewX.service.impl;
 import com.epam.codemastery.InterviewX.model.FeedbackModel;
 import com.epam.codemastery.InterviewX.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class FeedbackServiceImpl implements FeedbackService{
     @Autowired
     private CandidateService candidateService;
