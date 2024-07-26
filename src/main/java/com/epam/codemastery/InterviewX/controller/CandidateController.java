@@ -18,17 +18,17 @@ public class CandidateController {
     @Autowired
     private CandidateService candidateService;
 
-    @PostMapping("/save")
+    @PostMapping
     public CandidateModel saveCandidate(@RequestBody CandidateModel candidateModel) {
         return candidateService.saveCandidate(candidateModel);
     }
 
-    @GetMapping("/get")
+    @GetMapping
     public List<CandidateModel> getCandidates() {
         return candidateService.getCandidates();
     }
 
-    @GetMapping("getCandidateById/{id}")
+    @GetMapping("/{id}")
     public Optional<CandidateModel> getCandidateById(@PathVariable String id) {
         return candidateService.getCandidateById(id);
     }
