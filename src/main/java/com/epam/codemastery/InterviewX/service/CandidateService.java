@@ -11,5 +11,5 @@ public interface CandidateService {
 
     CandidateModel saveCandidate(CandidateModel candidateDetails);
     List<CandidateModel> getCandidates();
-    Optional<CandidateModel> getCandidateById(String id);
+    CandidateModel getCandidateById(String id);
 }

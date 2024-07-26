@@ -29,7 +29,7 @@ public class CandidateController {
     }
 
     @GetMapping("/{id}")
-    public Optional<CandidateModel> getCandidateById(@PathVariable String id) {
+    public CandidateModel getCandidateById(@PathVariable String id) {
         return candidateService.getCandidateById(id);
     }
 
