@@ -1,8 +1,6 @@
 package com.epam.codemastery.InterviewX.controller;
 
-import com.epam.codemastery.InterviewX.model.ClientModel;
 import com.epam.codemastery.InterviewX.model.ProjectModel;
-import com.epam.codemastery.InterviewX.service.ClientService;
 import com.epam.codemastery.InterviewX.service.ProjectService;
 import lombok.RequiredArgsConstructor;
 import org.apache.coyote.BadRequestException;
