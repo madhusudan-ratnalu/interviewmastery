@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
 
+import java.io.Serializable;
 import java.util.Date;
 
 
@@ -16,7 +17,7 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClientModel {
+public class ClientModel implements Serializable {
     @JsonSerialize(using = ObjectIdSerializer.class)
     private ObjectId _id;
     private String clientCode;

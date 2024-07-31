@@ -8,13 +8,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ProjectModel {
+public class ProjectModel implements Serializable {
     @JsonSerialize(using = ObjectIdSerializer.class)
     private ObjectId _id;
     @JsonSerialize(using = ObjectIdSerializer.class)
