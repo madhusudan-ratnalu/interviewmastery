@@ -1,6 +1,5 @@
 package com.epam.codemastery.InterviewX.service;
 
-import com.epam.codemastery.InterviewX.model.ClientModel;
 import com.epam.codemastery.InterviewX.model.ProjectModel;
 import org.apache.coyote.BadRequestException;
 
