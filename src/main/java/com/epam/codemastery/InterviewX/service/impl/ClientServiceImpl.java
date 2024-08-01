@@ -6,6 +6,7 @@ import com.epam.codemastery.InterviewX.model.entity.Client;
 import com.epam.codemastery.InterviewX.repository.ClientRepository;
 import com.epam.codemastery.InterviewX.service.ClientService;
 import lombok.RequiredArgsConstructor;
+import org.apache.coyote.BadRequestException;
 import org.bson.types.ObjectId;
 import org.springframework.stereotype.Service;
 
@@ -32,6 +33,15 @@ public class ClientServiceImpl implements ClientService {
         setDefaultFields(clientModel);
         Client client = clientRepository.save(clientMapper.modelToEntity(clientModel));
         return clientMapper.entityToModel(client);
+    }
+
+    @Override
+    public Client findByClientId(ObjectId clientId) {
+        try {
+            return clientRepository.findBy_idAndIsDeleted(clientId, false).orElseThrow(() -> new BadRequestException("Invalid clientId"));
+        } catch (BadRequestException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private void setDefaultFields(ClientModel client) {

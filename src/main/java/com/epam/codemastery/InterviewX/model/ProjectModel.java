@@ -1,6 +1,7 @@
 package com.epam.codemastery.InterviewX.model;
 
 import com.epam.codemastery.InterviewX.config.ObjectIdSerializer;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,6 +16,7 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ProjectModel implements Serializable {
     @JsonSerialize(using = ObjectIdSerializer.class)
     private ObjectId _id;
