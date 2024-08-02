@@ -8,9 +8,9 @@ group = 'com.epam.codemastery'
 version = '0.0.1-SNAPSHOT'
 
 java {
-	toolchain {
-		languageVersion = JavaLanguageVersion.of(22)
-	}
+//	toolchain {
+//		languageVersion = JavaLanguageVersion.of(22)
+//	}
 }
 
 configurations {
@@ -23,6 +23,7 @@ repositories {
     mavenCentral()
     maven { url 'https://repo.spring.io/milestone' }
     maven { url 'https://repo.spring.io/snapshot' }
+
 }
 
 dependencies {
@@ -43,7 +44,7 @@ dependencies {
 	//AI
 	implementation platform("org.springframework.ai:spring-ai-bom:1.0.0-SNAPSHOT")
 	implementation 'org.springframework.ai:spring-ai-azure-openai-spring-boot-starter'
-
+	implementation 'org.springframework.ai:spring-ai-qdrant-store-spring-boot-starter'
 }
 
 tasks.named('test') {

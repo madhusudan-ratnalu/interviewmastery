@@ -1,0 +1,186 @@
+Topic,Question
+Java,Can you explain immutability  in JVM?
+Java,What is the difference between an object and a class in Java?
+Java, Difference between JVM JDK "
+Java,What is the difference between method overriding and method overloading in Java?
+Java,Can you explain garbage collection in Java? 
+Java,Inheritance vs composition 
+Java,Any functional interface in java 8?
+Java,What is the use of optional class in java?
+Java,Which collection can be used to maintain insertion order and avoid duplication?
+Java,Exception vs Error in java ?
+Java,What are different class loaders in JVM?
+Java,Are Singleton Beans Thread-Safe?
+Java,How Hashmap works internally?
+Java,Can you explain different between String vs StringBuilder?
+Java,Which among String or String Buffer should be preferred when there are a lot of updates required to be done in the data?
+Java,What is the time complexity of basic operations get() and put() in HashMap class?
+Java,Is is possible to write custom exception in java ?
+spring boot,Why Spring Boot over Spring?
+spring boot,Explain core modules of spring framework?
+spring boot,How would you switch from tomcat to jetty server in spring boot application?
+spring boot, What do you understand by Dependency Injection ways to DI?"
+spring boot,What Is the Bean Scope in Spring Framework and which one is default scope in spring ?
+spring boot,Can you describe the working of the @SpringBootApplication annotation?
+spring boot,How to fix circular dependency? (IMP)
+spring boot,Explore multiple ways 
+spring boot,Difference between PathVaribale and RequestParam
+spring boot,Share some of the annotation which you have worked ?
+spring boot,Component vs Service vs Repository 
+spring boot,ComponentScan 
+spring boot, What is the use of Profiles in spring boot?
+spring boot,Is it possible to create custom annotation ? How would you create custom annotation in spring? 
+spring boot, If one of our classes requires a specific datasource bean different from the one with the highest precedence,ould you make sure that class gets the correct bean?   (@Primary)"
+spring boot,How would you design a global API error handling system in a spring base application?
+spring boot,What is the use of the @Qualifier annotation in Spring? 
+spring boot,How do you utilize property form application.properties in spring?
+spring boot,If you were tasked with building a Spring Boot application that needs to support multiple databases,ould you design and implement it?"
+spring boot,Is it possible to use sql and nosql db in one spring application?
+spring boot,Name Some of the Design Patterns Used in the Spring ?
+SQL,Explain the concept of ACID properties in the context of database transactions.
+SQL, Explain the differences between joins
+SQL,What are the different types of indexes in SQL and when would you use each one?
+SQL,What are views in SQL? Can you explain their advantages and how to create one?
+SQL, What are DDL DCL commands in SQL? Can you name a few commands under each category?"
+SQL,Explain the difference between the WHERE clause and the HAVING clause.
+SQL,What is the purpose of normalization in SQL?
+SQL,Can you explain the difference between a temporary table and a table variable?
+SQL,What is a stored procedure and how is it different from a function in SQL?
+SQL,What is a subquery in SQL? Could you provide an example?
+Hibernate,Can tell me difference between Hibernate and JPA 
+Hibernate,What are the different approach for generating identifier JPA?
+Hibernate,Explain fetch Strategy in JPA?
+Hibernate,What is isolation in hibernate context? 
+Hibernate,How is isolation implemented in Hibernate transactions?
+Hibernate,Is is possible to write native query in hibernate ?
+Hibernate,What Are The Different Types Of Caching Strategies In Spring Data JPA?
+Hibernate,Can you explain difference between save() and Persist()? (Difference between save() and persist() in Hibernate (tutorialspoint.com))
+Hibernate,What is composite key in sql?
+Hibernate,What is database view and what are the advantages of it ?
+Hibernate, Can you explain many to one relation and it should have controller service and repos?"
+Hibernate, What is the difference between transient & objects in Hibernate?"
+Angular,Can you explain usage of angular.json?
+Angular,Can you mention angular lifecycle hooks?
+Angular,What is the purpose of ngOnInit() method in Angular?
+Angular,Explain the order of execution of Angular lifecycle hooks.
+Angular, How can you pass data from a parent component to a dynamically created child component in Angular?
+Angular, Can a child component have multiple @Output properties in Angular?
+Angular, What is the purpose of attribute directives in Angular?
+Angular, How do you apply an attribute directive to an element in Angular?
+Angular,Can you name few decorators in angular?
+Angular,Examples ?
+Angular,What is the use of pipe in Angular? 
+Angular,Share any example of it?
+Angular,What is impure and pure pipe?
+Angular,Can you share names of annotation in angular?
+Angular,What is an AOT compilation? What are its advantages?
+Angular,Difference between AOT and JIT
+Angular,What is view encapsulation in Angular?
+Angular,What is String Interpolation in Angular?
+Angular,What is Eager and Lazy loading? 
+Angular,What is transpiling in Angular?
+Angular,What is change detection in Angular? How can you trigger change detection manually in Angular?
+Angular,Is it possible to override headers in angular for all the request if yes how?
+Angular,What are HTTP interceptors
+Angular,"Explain Components, Services in Angular?"
+Angular,What is the difference between Subject and BehaviorSubject?
+Angular, What is Angular and how does it differ from AngularJS?",Easy
+Angular,"Explain the purpose of @Component decorator in Angular.",Easy
+Angular,"What are the three types of directives in Angular?",Medium
+Angular,"How do you create and use a service in Angular?",Medium
+Angular,"Explain the concept of lazy loading in Angular routing.",Hard
+Angular,"What is the difference between one-way and two-way data binding?",Easy
+Angular,"Explain the concept of dependency injection in Angular.",Medium
+Angular,"What is the purpose of NgModule in Angular?",Easy
+Angular,"How do you create a custom pipe in Angular?",Medium
+Angular,"List and briefly explain the lifecycle hooks in Angular.",Hard
+Angular,"What are the two types of forms in Angular? Compare them.",Medium
+Angular,"How do Observables differ from Promises in Angular?",Hard
+Angular,"Explain the change detection strategy in Angular.",Hard
+Angular,"What is the purpose of ng-template in Angular?",Medium
+Angular,"How do you generate a new component using Angular CLI?",Easy
+Angular,"What is TypeScript and why is it used in Angular?",Easy
+Angular,"How do you pass data from parent to child component?",Medium
+Angular,"Explain the difference between structural and attribute directives.",Medium
+Angular,"What is the @Injectable decorator used for?",Medium
+Angular,"How do you implement route guards in Angular?",Hard
+Angular,"Explain the difference between [(ngModel)] and [ngModel].",Medium
+Angular,"What are the different ways to provide a service in Angular?",Hard
+Angular,"What is the difference between declarations, imports, and providers in NgModule?",Medium
+Angular,"What is the difference between pure and impure pipes?",Hard
+Angular,"In which lifecycle hook would you make HTTP calls and why?",Medium
+Angular,"How do you perform form validation in Angular?",Medium
+Angular,"What is the purpose of the async pipe?",Medium
+Angular,"How can you manually trigger change detection in Angular?",Hard
+Angular,"What is the difference between ng-template and ng-container?",Medium
+Angular,"How do you update Angular CLI to the latest version?",Easy
+Angular,"What are the key features of Angular?",Easy
+Angular,"How do you create a dynamic component in Angular?",Hard
+Angular,"How do you create a custom structural directive?",Hard
+Angular,"Explain the concept of singleton services in Angular.",Medium
+Angular,"How do you pass parameters to routes in Angular?",Medium
+Angular,"What is the purpose of ngOnChanges lifecycle hook in data binding?",Medium
+Angular,"What is the purpose of @Optional decorator in dependency injection?",Hard
+Angular,"What is the difference between eagerly loaded and lazy loaded modules?",Medium
+Angular,"How do you chain multiple pipes in Angular?",Medium
+Angular,"What is the purpose of ngOnInit lifecycle hook?",Easy
+Angular,"How do you create a custom form validator in Angular?",Hard
+Angular,"What is the purpose of Subject in RxJS?",Hard
+Angular,"What is the purpose of ChangeDetectorRef in Angular?",Hard
+Angular,"How do you use ngSwitch directive in Angular?",Medium
+Angular,"How do you add a third-party library to an Angular project using CLI?",Medium
+Angular,"What is AOT compilation in Angular?",Medium
+Angular,"How do you implement content projection in Angular?",Medium
+Angular,"What is the purpose of @HostListener decorator?",Medium
+Angular,"How do you use HttpClient for making HTTP requests in Angular?",Medium
+Angular,"What is the purpose of RouterOutlet directive?",Easy
+Angular,"How does property binding differ from attribute binding?",Medium
+Angular,"What is the purpose of @Self decorator in DI?",Hard
+Angular,"How do you share services between eagerly loaded modules?",Hard
+Angular,"What is the purpose of the pure property in custom pipes?",Hard
+Angular,"What is the difference between ngOnInit and constructor?",Medium
+Angular,"How do you reset a form in Angular?",Easy
+Angular,"What is the difference between map and flatMap operators?",Hard
+Angular,"What is the purpose of OnPush change detection strategy?",Hard
+Angular,"How do you use ngClass directive in Angular?",Easy
+Angular,"How do you create a production build using Angular CLI?",Medium
+Angular,"What is the purpose of polyfills in Angular?",Medium
+Angular,"How do you implement component inheritance in Angular?",Hard
+Angular,"What is the difference between host and host-context in directive metadata?",Hard
+Angular,"How do you implement error handling in HTTP requests?",Medium
+Angular,"What is the purpose of CanActivate guard?",Medium
+Angular,"How do you bind to native DOM properties in Angular?",Medium
+Angular,"What is the purpose of @Host decorator in DI?",Hard
+Angular,"How do you configure providers with different injection tokens?",Hard
+Angular,"How do you optimize pipe performance in Angular?",Hard
+Angular,"What is the purpose of ngOnDestroy lifecycle hook?",Medium
+Angular,"How do you implement cross-field validation in reactive forms?",Hard
+Angular,"What is the purpose of switchMap operator?",Hard
+Angular,"How does zone.js work with Angular's change detection?",Hard
+Angular,"What is the purpose of ngNonBindable directive?",Medium
+Angular,"How do you create a library project using Angular CLI?",Medium
+Angular,"What is a decorator in Angular?",Easy
+Angular,"How do you implement two-way communication between components?",Medium
+Angular,"What is the purpose of @ViewChild decorator?",Medium
+Angular,"How do you implement caching in Angular services?",Hard
+Angular,"What is the difference between RouterLink and routerLink directives?",Medium
+Angular,"How do you implement custom two-way data binding?",Hard
+Angular,"What is the purpose of @SkipSelf decorator in DI?",Hard
+Angular,"How do you use forRoot() and forChild() methods in routing modules?",Hard
+Angular,"How do you implement internationalization using pipes?",Hard
+Angular,"What is the purpose of ngDoCheck lifecycle hook?",Hard
+Angular,"How do you implement dynamic form controls in reactive forms?",Hard
+Angular,"What is the purpose of BehaviorSubject?",Hard
+Angular,"How do you implement custom change detection in Angular?",Hard
+Angular,"What is the purpose of ngTemplateOutlet directive?",Medium
+Angular,"How do you configure environment-specific settings using Angular CLI?",Medium
+Angular,"What is the difference between declarations and entryComponents?",Medium
+Angular,"How do you implement server-side rendering in Angular?",Hard
+Angular,"What is the purpose of @ContentChild decorator?",Medium
+Angular,"How do you implement interceptors in Angular?",Hard
+Angular,"How do you implement nested routing in Angular?",Medium
+Angular,"What is the purpose of Safe Navigation Operator in Angular?",Medium
+Angular,"How do you use InjectionToken in Angular?",Hard
+Angular,"What is the purpose of SharedModule in Angular?",Medium
+Angular,"How do you implement a stateful pipe in Angular?",Hard
+Angular,"What is the execution order of lifecycle hooks in nested components?",Hard
