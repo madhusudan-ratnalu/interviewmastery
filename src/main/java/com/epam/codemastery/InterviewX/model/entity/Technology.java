@@ -6,10 +6,10 @@ import org.springframework.data.mongodb.core.mapping.MongoId;
 
 import java.sql.Timestamp;
 
-@Document(collation = "technology")
+@Document(collection = "technology")
 public class Technology {
     @MongoId(FieldType.OBJECT_ID)
-    private String _id;
+    private ObjectId _id;
     private String technologyName;
     private Timestamp dateCreated;
     private Timestamp dateModified;

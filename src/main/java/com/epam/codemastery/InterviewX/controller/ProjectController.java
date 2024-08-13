@@ -31,7 +31,7 @@ public class ProjectController {
      * @return projectModel
      */
     @PostMapping()
-    public ProjectModel saveProject(@RequestBody ProjectModel projectModel) throws BadRequestException {
+    public ProjectModel saveProject(@RequestBody ProjectModel projectModel) {
         return projectService.saveProject(projectModel);
     }
 }
