@@ -1,6 +1,7 @@
 package com.epam.codemastery.InterviewX.service;
 
 import com.epam.codemastery.InterviewX.model.CandidateModel;
+import org.bson.types.ObjectId;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,5 +12,5 @@ public interface CandidateService {
 
     CandidateModel saveCandidate(CandidateModel candidateDetails);
     List<CandidateModel> getCandidates();
-    CandidateModel getCandidateById(String id);
+    CandidateModel getCandidateById(ObjectId candidateId);
 }

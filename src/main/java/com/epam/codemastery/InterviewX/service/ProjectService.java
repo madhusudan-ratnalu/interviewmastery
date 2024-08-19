@@ -12,5 +12,5 @@ public interface ProjectService {
 
     ProjectModel saveProject(ProjectModel projectModel);
 
-    Project findByProjectId(ObjectId id);
+    ProjectModel findByProjectId(ObjectId id);
 }

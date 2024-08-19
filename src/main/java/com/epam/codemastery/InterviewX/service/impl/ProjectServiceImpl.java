@@ -7,13 +7,16 @@ import com.epam.codemastery.InterviewX.model.entity.Project;
 import com.epam.codemastery.InterviewX.repository.ClientRepository;
 import com.epam.codemastery.InterviewX.repository.ProjectRepository;
 import com.epam.codemastery.InterviewX.service.ProjectService;
+import com.epam.codemastery.InterviewX.utils.Utility;
 import lombok.RequiredArgsConstructor;
 import org.apache.coyote.BadRequestException;
 import org.bson.types.ObjectId;
 import org.springframework.stereotype.Service;
 
+import javax.swing.text.html.Option;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -29,7 +32,7 @@ public class ProjectServiceImpl implements ProjectService {
 
     @Override
     public ProjectModel saveProject(ProjectModel projectModel){
-        setDefaultFields(projectModel);
+        Utility.setDefaultFields(projectModel);
         Client client = null;
         try {
             client = clientRepository.findById(projectModel.getClientId()).orElseThrow(() -> new BadRequestException("Invalid clientId"));
@@ -43,17 +46,14 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
-    public Project findByProjectId(ObjectId id) {
+    public ProjectModel findByProjectId(ObjectId id) {
+        Optional<Project> project;
         try {
-            return projectRepository.findBy_idAndIsDeleted(id, false).orElseThrow(() -> new BadRequestException("Invalid projectId"));
+           project = Optional.ofNullable(projectRepository.findBy_idAndIsDeleted(id, false).orElseThrow(() -> new BadRequestException("Invalid projectId")));
         } catch (BadRequestException e) {
             throw new RuntimeException(e);
         }
+        return projectMapper.entityToModel(project.get());
     }
 
-    private void setDefaultFields(ProjectModel projectModel) {
-        projectModel.setDateCreated(new Date());
-        projectModel.setDateModified(new Date());
-        projectModel.setIsDeleted(false);
-    }
 }
