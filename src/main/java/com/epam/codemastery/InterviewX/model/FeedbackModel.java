@@ -1,6 +1,7 @@
 package com.epam.codemastery.InterviewX.model;
 
 
+import com.epam.codemastery.InterviewX.service.Auditable;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;
 import lombok.Setter;

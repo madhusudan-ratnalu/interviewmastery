@@ -1,5 +1,6 @@
 package com.epam.codemastery.InterviewX.model.entity;
 
+import com.epam.codemastery.InterviewX.service.Auditable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,7 +17,7 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Client {
+public class Client implements Auditable {
     @MongoId(FieldType.OBJECT_ID)
     private ObjectId _id;
     private String clientCode;

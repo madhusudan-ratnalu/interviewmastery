@@ -11,5 +11,5 @@ public interface ClientService {
 
     ClientModel saveClient(ClientModel clientModel);
 
-    Client findByClientId(ObjectId clientId);
+    ClientModel findByClientId(ObjectId clientId);
 }

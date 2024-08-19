@@ -1,5 +1,6 @@
 package com.epam.codemastery.InterviewX.model.entity;
 
+import com.epam.codemastery.InterviewX.service.Auditable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,7 +17,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "questions")
-public class Question {
+public class Question implements Auditable {
     @MongoId(FieldType.OBJECT_ID)
     private String _id;
     private ObjectId clientId;
@@ -28,4 +29,5 @@ public class Question {
     private Date dateCreated;
     private Date dateModified;
     private Boolean isDeleted;
+
 }

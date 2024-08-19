@@ -7,7 +7,7 @@ import org.bson.types.ObjectId;
 import java.util.List;
 
 public interface TechnologyService {
-    Technology findByTechnologyId(ObjectId id);
+    TechnologyModel findByTechnologyId(ObjectId id);
     TechnologyModel saveTechnologies(TechnologyModel technologyModel);
     List<TechnologyModel> getTechnologies();
 
