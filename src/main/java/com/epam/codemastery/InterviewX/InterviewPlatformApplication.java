@@ -12,9 +12,6 @@ public class InterviewPlatformApplication {
 
 
     public static void main(String[] args) {
-
-
-
         SpringApplication.run(InterviewPlatformApplication.class, args);
     }
 

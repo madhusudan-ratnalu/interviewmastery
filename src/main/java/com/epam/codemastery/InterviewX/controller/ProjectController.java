@@ -1,16 +1,18 @@
 package com.epam.codemastery.InterviewX.controller;
 
+import com.epam.codemastery.InterviewX.model.CandidateModel;
 import com.epam.codemastery.InterviewX.model.ProjectModel;
 import com.epam.codemastery.InterviewX.service.ProjectService;
 import lombok.RequiredArgsConstructor;
 import org.apache.coyote.BadRequestException;
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController()
-@RequestMapping("/project")
+@RestController
+@RequestMapping("/api/project")
 @RequiredArgsConstructor
 public class ProjectController {
     @Autowired
@@ -33,5 +35,10 @@ public class ProjectController {
     @PostMapping()
     public ProjectModel saveProject(@RequestBody ProjectModel projectModel) {
         return projectService.saveProject(projectModel);
+    }
+
+    @GetMapping("/{id}")
+    public ProjectModel getProjectById(@PathVariable ObjectId id) {
+        return projectService.findByProjectId(id);
     }
 }

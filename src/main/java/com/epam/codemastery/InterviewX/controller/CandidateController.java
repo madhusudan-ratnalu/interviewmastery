@@ -3,6 +3,7 @@ package com.epam.codemastery.InterviewX.controller;
 import com.epam.codemastery.InterviewX.model.CandidateModel;
 import com.epam.codemastery.InterviewX.service.CandidateService;
 import lombok.RequiredArgsConstructor;
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,7 +30,7 @@ public class CandidateController {
     }
 
     @GetMapping("/{id}")
-    public CandidateModel getCandidateById(@PathVariable String id) {
+    public CandidateModel getCandidateById(@PathVariable ObjectId id) {
         return candidateService.getCandidateById(id);
     }
 

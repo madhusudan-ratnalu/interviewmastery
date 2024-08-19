@@ -2,6 +2,7 @@ package com.epam.codemastery.InterviewX.model;
 
 
 import com.epam.codemastery.InterviewX.config.ObjectIdSerializer;
+import com.epam.codemastery.InterviewX.service.Auditable;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
@@ -20,7 +21,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class QuestionsModel implements Serializable {
+public class QuestionsModel implements Serializable, Auditable {
     @JsonSerialize(using = ObjectIdSerializer.class)
     private ObjectId _id;
     @JsonSerialize(using = ObjectIdSerializer.class)
