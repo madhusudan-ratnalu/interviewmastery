@@ -16,4 +16,9 @@ public class QuestionServiceImpl implements QuestionService {
     public void savaQuestions(List<Question> questionList) {
         questionRepository.saveAll(questionList);
     }
+
+    @Override
+    public List<Question> findQuestionsForSync() {
+        return questionRepository.findByIsSyncedFalse();
+    }
 }
