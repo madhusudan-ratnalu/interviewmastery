@@ -16,7 +16,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
 import java.io.Serializable;
-import java.sql.Timestamp;
 
 @Data
 @Builder

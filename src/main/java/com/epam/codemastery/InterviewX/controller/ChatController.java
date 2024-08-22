@@ -1,31 +1,39 @@
 package com.epam.codemastery.InterviewX.controller;
 
+import com.epam.codemastery.InterviewX.model.ChatResponse;
+import com.epam.codemastery.InterviewX.model.QuestionSearchRequest;
 import com.epam.codemastery.InterviewX.service.ChatService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@RequestMapping("chat")
 @RestController
 public class ChatController {
 
     private final ChatService chatService;
 
     private final String defaultValue = """
-             Could you assist in assembling a tailored roadmap plan for a software developer looking 
-            to expand their expertise in {technology} over the course of the upcoming {number} level? 
-            Please highlight the crucial abilities and technologies to cultivate and provide detailed steps to accomplish each goal.
-            This pathway should emphasize the vital skills and technologies to be acquired, along with insights on achieving each step effectively based on real world interview experiences and industry practices.""";
+            Could you provide assistance in crafting a succinct two-week roadmap for a software developer intending to enhance their expertise?
+             This plan should itemize key topic areas and related high-level questions crucial to their professional growth.
+             Each topic and corresponding question should help nourish essential skills and expanding technological proficiency,
+             thereby enabling a structured yet efficient learning journey throughout the two weeks.""";
 
 
     public ChatController(ChatService chatService) {
         this.chatService = chatService;
     }
 
-    @GetMapping("/generate")
-    public String generateRoadmap(@RequestParam(value = "language", defaultValue = "Java") String language,
-                                  @RequestParam(value = "seniority", defaultValue = "Middle") String seniority) {
-        String prompt = defaultValue.replace("{technology}", language).replace("{number}", seniority);
-        return this.chatService.generateRoadMap(prompt).getContent();
+
+    @PostMapping("/generate")
+    public ResponseEntity<ChatResponse> generateRoadmap(@RequestBody QuestionSearchRequest searchRequest) {
+        String response = this.chatService.generateRoadMap(searchRequest, defaultValue).getContent();
+        ChatResponse chatResponse = new ChatResponse();
+        chatResponse.setResponse(response);
+        return new ResponseEntity<>(chatResponse, HttpStatus.OK);
     }
 
 

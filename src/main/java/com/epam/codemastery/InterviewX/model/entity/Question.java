@@ -29,5 +29,6 @@ public class Question implements Auditable {
     private Date dateCreated;
     private Date dateModified;
     private Boolean isDeleted;
+    private Boolean isSynced;
 
 }
