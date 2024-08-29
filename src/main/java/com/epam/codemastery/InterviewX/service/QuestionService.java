@@ -6,4 +6,7 @@ import java.util.List;
 
 public interface QuestionService {
     void savaQuestions(List<Question> questionList);
+
+    List<Question> findQuestionsForSync();
+
 }

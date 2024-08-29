@@ -18,7 +18,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-@Configuration
+// Test configuration for local store
+//@Configuration
 public class RagConfiguration {
 
     private static final Logger log = LoggerFactory.getLogger(RagConfiguration.class);
@@ -30,7 +31,7 @@ public class RagConfiguration {
     @Value("vectorstore.json")
     private String vectorStoreName;
 
-    @Bean
+//    @Bean
     SimpleVectorStore simpleVectorStore(EmbeddingModel embeddingModel) {
         var simpleVectorStore = new SimpleVectorStore(embeddingModel);
         var vectorStoreFile = getVectorStoreFile();
