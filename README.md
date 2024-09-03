@@ -1,5 +1,7 @@
 # CodeMastery Program
 
+![deployment_HLD.png](deployment_HLD.png)
+
 ## Table of Contents
 1. [Description](#description)
 2. [Tech Stack](#tech-stack)
@@ -22,6 +24,15 @@ The CodeMastery Program utilizes a diverse tech stack to ensure a well-rounded u
 - **Spring AI**: Integration with Azure OpenAI and Qdrant for AI capabilities.
 - **Azure OpenAI**: Advanced language models for natural language processing tasks.
 - **Qdrant**: Vector database for efficient similarity search and RAG implementation.
+
+## Architecture Overview
+
+<img src="dev_journey_HLD.png" width="400" height="400">
+
+<img src="Lagchain_vector_GenAI_HLD.png" width="400" height="400">
+
+<img src="roadmap_HLD.png" width="400" height="400">
+
 
 ## Documents and Reference Links
 This section will be updated with relevant documents and reference links that will aid in understanding and utilizing the CodeMastery Program. The documents and links are divided according to different modules:
