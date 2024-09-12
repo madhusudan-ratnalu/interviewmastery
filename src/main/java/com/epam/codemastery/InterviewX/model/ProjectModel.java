@@ -1,4 +1,31 @@
 package com.epam.codemastery.InterviewX.model;
 
-public record ProjectModel(String projectName, String projectCode) {
+import com.epam.codemastery.InterviewX.config.ObjectIdSerializer;
+import com.epam.codemastery.InterviewX.service.Auditable;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.bson.types.ObjectId;
+
+import java.io.Serializable;
+import java.util.Date;
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class ProjectModel implements Serializable, Auditable {
+    @JsonSerialize(using = ObjectIdSerializer.class)
+    private ObjectId _id;
+    @JsonSerialize(using = ObjectIdSerializer.class)
+    private ObjectId clientId;
+    private String projectName;
+    private String projectCode;
+    private Date dateCreated;
+    private Date dateModified;
+    private Boolean isDeleted;
 }

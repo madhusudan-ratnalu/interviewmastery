@@ -1,19 +1,29 @@
 package com.epam.codemastery.InterviewX.model.entity;
 
+import com.epam.codemastery.InterviewX.service.Auditable;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.FieldType;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
-@Document(collation = "clients")
-public class Client {
+@Document(collection = "clients")
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class Client implements Auditable {
     @MongoId(FieldType.OBJECT_ID)
-    private String _id;
+    private ObjectId _id;
     private String clientCode;
     private String country;
     private String clientName;
-    private Timestamp dateCreated;
-    private Timestamp dateModified;
+    private Date dateCreated;
+    private Date dateModified;
     private Boolean isDeleted;
 }
